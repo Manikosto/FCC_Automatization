@@ -29,24 +29,24 @@ class LP_tests(unittest.TestCase):
         print(driver.title)
         print('>>> Sign Up is Passed')
 
-    def test_login(self): #Validated login
-        driver = self.driver
-        driver.implicitly_wait(10)
-        driver.maximize_window()
-        driver.get("https://www.freeconferencecall.com/en/us")
-        driver.find_element_by_xpath('//*[@id="login-desktop"]').click()
-        driver.find_element_by_xpath('//*[@id="login_email"]').clear()
-        driver.find_element_by_xpath('//*[@id="login_email"]').click()
-        email.send_keys('smcallacc@gmail.com')
-        driver.find_element_by_xpath('//*[@id="password"]').send_keys('pereriv123')
-        driver.find_element_by_xpath('//*[@id="loginformsubmit"]').click()
-        driver.find_element_by_xpath('//*[@id="document-top"]/div[12]')
-        ErrorLogin = driver.find_element_by_xpath('//*[@id="document-top"]/div[12]')
-        if ErrorLogin.text == ErrorLogin.text:
-            print(ErrorLogin.text)
-        else:
-            driver.save_screenshot("LandingPageScreenShotsResult/Login/login.png")  # ScreenShot
-            print('>>> Login is Passed')
+    # def test_login(self): #Validated login
+    #     driver = self.driver
+    #     driver.implicitly_wait(10)
+    #     driver.maximize_window()
+    #     driver.get("https://www.freeconferencecall.com/en/us")
+    #     driver.find_element_by_xpath('//*[@id="login-desktop"]').click()
+    #     driver.find_element_by_xpath('//*[@id="login_email"]').clear()
+    #     driver.find_element_by_xpath('//*[@id="login_email"]').click()
+    #     email.send_keys('smcallacc@gmail.com')
+    #     driver.find_element_by_xpath('//*[@id="password"]').send_keys('pereriv123')
+    #     driver.find_element_by_xpath('//*[@id="loginformsubmit"]').click()
+    #     driver.find_element_by_xpath('//*[@id="document-top"]/div[12]')
+    #     ErrorLogin = driver.find_element_by_xpath('//*[@id="document-top"]/div[12]')
+    #     if ErrorLogin.text == ErrorLogin.text:
+    #         print(ErrorLogin.text)
+    #     else:
+    #         driver.save_screenshot("LandingPageScreenShotsResult/Login/login.png")  # ScreenShot
+    #         print('>>> Login is Passed')
 
 
     def test_JoinMeeting(self): #Join meeting from landing
