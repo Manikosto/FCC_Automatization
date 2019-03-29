@@ -9,25 +9,45 @@ from selenium.common.exceptions import NoSuchElementException
 import random
 
 
+# driver.find_element(By.XPATH(''))
 class LP_tests(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome('chromedriver.exe')  # Обьявление драйвера
+
+    def test_SignUp(self):
+        driver = self.driver
+        driver.implicitly_wait(10)
+        driver.maximize_window()
+        driver.get("https://www.freeconferencecall.com/en/us")
+        login = str(random.randint(10000,100000))+ '@mail.ru'
+        password = random.randint(100000,500000)
+        driver.find_element_by_xpath('//*[@id="main_email"]').send_keys(login)
+        driver.find_element_by_xpath('//*[@id="password"]').send_keys(password)
+        driver.find_element_by_xpath('//*[@id="signupButton"]').click()
+        time.sleep(5)
+        driver.find_element_by_xpath('//*[@id="ember1215"]/div[3]/div[1]/div[1]/h1')
+        print(driver.title)
+        print('>>> Sign Up is Passed')
 
     def test_login(self): #Validated login
         driver = self.driver
         driver.implicitly_wait(10)
         driver.maximize_window()
         driver.get("https://www.freeconferencecall.com/en/us")
-        login = driver.find_element_by_xpath('//*[@id="login-desktop"]')
-        login.click()
-        email = driver.find_element_by_xpath('//*[@id="login_email"]')
-        email.clear()
-        email.send_keys('manikosto@gmail.com')
+        driver.find_element_by_xpath('//*[@id="login-desktop"]').click()
+        driver.find_element_by_xpath('//*[@id="login_email"]').clear()
+        driver.find_element_by_xpath('//*[@id="login_email"]').click()
+        email.send_keys('smcallacc@gmail.com')
         driver.find_element_by_xpath('//*[@id="password"]').send_keys('pereriv123')
         driver.find_element_by_xpath('//*[@id="loginformsubmit"]').click()
-        time.sleep(1)
-        driver.save_screenshot("LandingPageScreenShotsResult/Login/login.png") # ScreenShot
-        print('>>> Login is Passed')
+        driver.find_element_by_xpath('//*[@id="document-top"]/div[12]')
+        ErrorLogin = driver.find_element_by_xpath('//*[@id="document-top"]/div[12]')
+        if ErrorLogin.text == ErrorLogin.text:
+            print(ErrorLogin.text)
+        else:
+            driver.save_screenshot("LandingPageScreenShotsResult/Login/login.png")  # ScreenShot
+            print('>>> Login is Passed')
+
 
     def test_JoinMeeting(self): #Join meeting from landing
 
@@ -139,19 +159,7 @@ class LP_tests(unittest.TestCase):
         print('>>> ' + driver.title)
         print('>>> Logo link is Passed')
 
-    def test_SignUp(self):
-        driver = self.driver
-        driver.implicitly_wait(10)
-        driver.maximize_window()
-        driver.get("https://www.freeconferencecall.com/en/us")
-        login = random.randint(10000,100000)
-        driver.find_element_by_xpath('//*[@id="main_email"]').send_keys(str(login) + '@mail.ru')
-        driver.find_element_by_xpath('//*[@id="password"]').send_keys(random.randint(100000,500000))
-        driver.find_element_by_xpath('//*[@id="signupButton"]').click()
-        time.sleep(5)
-        driver.find_element_by_xpath('//*[@id="ember1215"]/div[3]/div[1]/div[1]/h1')
-        print(driver.title)
-        print('>>> Sign Up is Passed')
+
 
     def test_FacebookAutorization(self):
         driver = self.driver
