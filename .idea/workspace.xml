@@ -15,11 +15,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandingPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="340">
+              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1553863622641" expanded="true" signature="1235:2279" ph="..." />
+                <marker date="1554119996908" expanded="true" signature="1329:2373" ph="..." />
               </folding>
             </state>
           </provider>
@@ -45,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="205" />
     <option name="y" value="78" />
     <option name="width" value="1400" />
@@ -141,7 +141,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for LandingPage.LP_tests.test_SocialLinks" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for LandingPage.LP_tests.test_TopBar" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="FCC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,7 +151,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;LandingPage.LP_tests.test_SocialLinks&quot;" />
+      <option name="_new_target" value="&quot;LandingPage.LP_tests.test_TopBar&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -172,10 +172,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_SignUp" />
+        <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_TopBar" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_login" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_JoinMeeting" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests" />
-        <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_SocialLinks" />
       </list>
     </recent_temporary>
   </component>
@@ -193,12 +193,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_LandingPage_LP_tests_test_login - 2019.03.19 at 12h 28m 42s.xml">
-      <configuration name="Unittests for LandingPage.LP_tests.test_login" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_LandingPage_LP_tests_test_login - 2019.03.19 at 12h 29m 34s.xml">
-      <configuration name="Unittests for LandingPage.LP_tests.test_login" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_LandingPage_LP_tests_test_login - 2019.03.19 at 12h 30m 02s.xml">
       <configuration name="Unittests for LandingPage.LP_tests.test_login" configurationId="tests" />
     </history-entry>
@@ -223,9 +217,15 @@
     <history-entry file="Unittests_for_LandingPage_LP_tests_test_SignUp - 2019.03.19 at 13h 04m 35s.xml">
       <configuration name="Unittests for LandingPage.LP_tests.test_SignUp" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_LandingPage_LP_tests_test_TopBar - 2019.04.01 at 14h 59m 00s.xml">
+      <configuration name="Unittests for LandingPage.LP_tests.test_TopBar" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_LandingPage_LP_tests_test_SignUp - 2019.04.01 at 14h 59m 30s.xml">
+      <configuration name="Unittests for LandingPage.LP_tests.test_SignUp" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
@@ -264,11 +264,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LandingPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="340">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1553863622641" expanded="true" signature="1235:2279" ph="..." />
+            <marker date="1554119996908" expanded="true" signature="1329:2373" ph="..." />
           </folding>
         </state>
       </provider>
