@@ -15,11 +15,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandingPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+            <state relative-caret-position="350">
+              <caret line="273" column="36" lean-forward="true" selection-start-line="273" selection-start-column="36" selection-end-line="273" selection-end-column="36" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1554119996908" expanded="true" signature="1329:2373" ph="..." />
+                <marker date="1554381582548" expanded="true" signature="1329:2373" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,21 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for LandingPage.LP_tests.test_SignUp">
-    <configuration name="Unittests for LandingPage.LP_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="FCC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;LandingPage.LP_tests&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for LandingPage.LP_tests.test_SignUpAfterScrolling">
     <configuration name="Unittests for LandingPage.LP_tests.test_JoinMeeting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="FCC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,6 +124,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;LandingPage.LP_tests.test_SignUp&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for LandingPage.LP_tests.test_SignUpAfterScrolling" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="FCC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;LandingPage.LP_tests.test_SignUpAfterScrolling&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -171,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_SignUpAfterScrolling" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_SignUp" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_TopBar" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_login" />
         <item itemvalue="Python tests.Unittests for LandingPage.LP_tests.test_JoinMeeting" />
-        <item itemvalue="Python tests.Unittests for LandingPage.LP_tests" />
       </list>
     </recent_temporary>
   </component>
@@ -193,12 +193,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_LandingPage_LP_tests_test_login - 2019.03.19 at 12h 30m 02s.xml">
-      <configuration name="Unittests for LandingPage.LP_tests.test_login" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_LandingPage_LP_tests_test_login - 2019.03.19 at 12h 31m 54s.xml">
-      <configuration name="Unittests for LandingPage.LP_tests.test_login" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_LandingPage_LP_tests_test_login - 2019.03.19 at 12h 32m 47s.xml">
       <configuration name="Unittests for LandingPage.LP_tests.test_login" configurationId="tests" />
     </history-entry>
@@ -222,6 +216,12 @@
     </history-entry>
     <history-entry file="Unittests_for_LandingPage_LP_tests_test_SignUp - 2019.04.01 at 14h 59m 30s.xml">
       <configuration name="Unittests for LandingPage.LP_tests.test_SignUp" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_LandingPage_LP_tests_test_SignUp - 2019.04.01 at 15h 00m 20s.xml">
+      <configuration name="Unittests for LandingPage.LP_tests.test_SignUp" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_LandingPage_LP_tests_test_SignUpAfterScrolling - 2019.04.01 at 16h 20m 01s.xml">
+      <configuration name="Unittests for LandingPage.LP_tests.test_SignUpAfterScrolling" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -262,13 +262,16 @@
     <entry file="file://$PROJECT_DIR$/LandingPageScreenShotsResult/Login/login.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/LandingPageScreenShotsResult/Login/SignUp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/LandingPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+        <state relative-caret-position="350">
+          <caret line="273" column="36" lean-forward="true" selection-start-line="273" selection-start-column="36" selection-end-line="273" selection-end-column="36" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1554119996908" expanded="true" signature="1329:2373" ph="..." />
+            <marker date="1554381582548" expanded="true" signature="1329:2373" ph="..." />
           </folding>
         </state>
       </provider>
