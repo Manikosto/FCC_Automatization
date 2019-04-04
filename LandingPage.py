@@ -27,7 +27,7 @@ class LP_tests(unittest.TestCase):
         time.sleep(5)
         driver.find_element_by_xpath('//*[@id="ember1215"]/div[3]/div[1]/div[1]/h1')
         print(driver.title)
-        driver.save_screenshot("LandingPageScreenShotsResult/Login/SignUp.png")  # ScreenShot
+        driver.save_screenshot("SignUp.png")  # ScreenShot
         print('>>> Sign Up is Passed')
 
     # def test_login(self): #Validated login
