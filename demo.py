@@ -24,7 +24,7 @@ class LP_tests(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="signup"]/div/div/div[2]/div/button').click()
         time.sleep(5)
         print('>>> Facebook autorization is Passed')
-
+        driver.save_screenshot('facebook.png')
 def tearDown(self):
     self.driver.close()
 
