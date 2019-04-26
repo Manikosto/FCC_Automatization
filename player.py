@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.action_chains import ActionChains
 import random
 
 
@@ -15,15 +16,15 @@ class LP_tests(unittest.TestCase):
         self.driver = webdriver.Chrome('chromedriver.exe')  # Обьявление драйвера
 
     def test_player(self):
-
         driver = self.driver
         driver.implicitly_wait(10)
-        # driver.maximize_window()
+        driver.maximize_window()
         wait = WebDriverWait(driver, 75)
+        wait_elem = WebDriverWait(driver, 10)
         count_of_errors = 0
         count_of_good = 0
         count_of_video = 0
-
+        action = ActionChains(driver)
         # Логинимся на странице
         driver.get('https://qa-www.freeconferencecall.com/login#login')
         driver.find_element(By.XPATH, "/html//input[@id='login_email']").send_keys('mkrtkv@gmail.com')
@@ -39,7 +40,13 @@ class LP_tests(unittest.TestCase):
         element = driver.find_element(By.XPATH, "/html//div[@id='main']/div[@class='ember-view']/div[@class='history-record wall-section']//div[@class='col-xs-12']/div[@class='ember-view']/div/div/div[4]/div[@class='form-group']/div[@class='ember-view']/select")
         drp = Select(element)
         drp.select_by_index(1)
-        driver.find_element(By.XPATH, "//button[@title='Search']").click()
+        search = driver.find_element(By.XPATH, "//button[@title='Search']")
+        try:
+            wait_elem.until(EC.element_to_be_clickable((By.XPATH,  "//button[@title='Search']")))
+            search.click()
+        except:
+            print('Не нашел поиск')
+
         time.sleep(5)
 
         # Переход по странице
@@ -50,7 +57,7 @@ class LP_tests(unittest.TestCase):
         while True:
             count_of_video += int(count_of_errors) + int(count_of_good)
             driver.refresh()
-            driver.execute_script("window.scrollTo(0,0)")
+            driver.execute_script("window.scrollTo(0, -1000)")
             time.sleep(10)
 
         # Получаем число видео-конференций
@@ -65,6 +72,7 @@ class LP_tests(unittest.TestCase):
                     elem.click()
                 except:
                     print('Элемент перекрыт')
+
 
                 # Переключаемся на IFRAME ошибки
                 driver.switch_to.frame(driver.find_element_by_xpath("//iframe[@class='embed-responsive-item']"))
