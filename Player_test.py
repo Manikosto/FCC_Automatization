@@ -102,7 +102,7 @@ class LP_tests(unittest.TestCase):
                 next.find_element_by_xpath('a').click()
 
         # Отчет
-        print('Всего записей: ' + str(count_of_video))
+#         print('Всего записей: ' + str(count_of_video))
         print('Ошибок: ' + str(count_of_errors))
         print('Выполнено: ' + str(count_of_good))
 
