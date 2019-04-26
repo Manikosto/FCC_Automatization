@@ -32,10 +32,11 @@ class LP_tests(unittest.TestCase):
         driver.find_element(By.XPATH, "/html//button[@id='loginformsubmit']").click()
 
         # Перешли в H&R
-        time.sleep(5)
+        time.sleep(10)
         driver.find_element(By.XPATH, "//div[@id='logged-in']/div/div[2]/ul/li[2]/a[1]").click()
+        time.sleep(10)
         driver.find_element(By.XPATH, "//div[@id='logged-in']/div/div[2]/ul/li[2]/ul[@role='menu']//a[@href='/profile/history']").click()
-
+        time.sleep(5)
         # Выбрали тип конференции
         element = driver.find_element(By.XPATH, "/html//div[@id='main']/div[@class='ember-view']/div[@class='history-record wall-section']//div[@class='col-xs-12']/div[@class='ember-view']/div/div/div[4]/div[@class='form-group']/div[@class='ember-view']/select")
         drp = Select(element)
