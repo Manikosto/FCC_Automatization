@@ -56,7 +56,7 @@ class LP_tests(unittest.TestCase):
 
         # Перебор записей
         while True:
-            count_of_video += int(count_of_errors) + int(count_of_good)
+            
             driver.refresh()
             driver.execute_script("window.scrollTo(0, -1000)")
             time.sleep(10)
@@ -102,6 +102,7 @@ class LP_tests(unittest.TestCase):
                 next.find_element_by_xpath('a').click()
 
         # Отчет
+        count_of_video += int(count_of_errors) + int(count_of_good)
         print('Count of record: ' + str(count_of_video))
         print('Errors: ' + str(count_of_errors))
         print('Passed: ' + str(count_of_good))
