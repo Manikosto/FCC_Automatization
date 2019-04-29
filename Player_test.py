@@ -46,7 +46,7 @@ class LP_tests(unittest.TestCase):
             wait_elem.until(EC.element_to_be_clickable((By.XPATH,  "//button[@title='Search']")))
             search.click()
         except:
-            print('Не нашел поиск')
+            print('Did not find search')
 
         time.sleep(5)
 
@@ -72,7 +72,7 @@ class LP_tests(unittest.TestCase):
                     wait.until(EC.element_to_be_clickable((By.XPATH, "//i[@class='fa fa-lg fa-film']")))
                     elem.click()
                 except:
-                    print('Элемент перекрыт')
+                    print('Element is not clickable')
 
 
                 # Переключаемся на IFRAME ошибки
@@ -102,9 +102,9 @@ class LP_tests(unittest.TestCase):
                 next.find_element_by_xpath('a').click()
 
         # Отчет
-#         print('Всего записей: ' + str(count_of_video))
-        print('Ошибок: ' + str(count_of_errors))
-        print('Выполнено: ' + str(count_of_good))
+        print('Count of record: ' + str(count_of_video))
+        print('Errors: ' + str(count_of_errors))
+        print('Passed: ' + str(count_of_good))
 
     #document.getElementsByClassName('fa-film').length
     #console.log($('.fa-film').length)
