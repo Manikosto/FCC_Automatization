@@ -128,7 +128,7 @@ class Landing_Page(unittest.TestCase):
     def test_LogInButton(self):
         try:
             self.driver.find_element(By.XPATH, self.LoginButton).click()
-            self.driver.save_screenshot("LoginPage.png")
+            self.driver.save_screenshot("screens/LoginPage.png")
             self.driver.back()
             print("PASSED: Login button")
         except:
@@ -220,7 +220,7 @@ class Landing_Page(unittest.TestCase):
     def test_International(self):
         try:
             self.driver.find_element(By.XPATH, self.international_button).click()
-            self.driver.save_screenshot("international_page.png")
+            self.driver.save_screenshot("screens/international_page.png")
             self.driver.back()
             print("PASSED: International page")
         except:
@@ -229,7 +229,7 @@ class Landing_Page(unittest.TestCase):
     def test_WebControls(self):
         try:
             self.driver.find_element(By.XPATH, self.web_contrl_button).click()
-            self.driver.save_screenshot("WebControlsPage.png")
+            self.driver.save_screenshot("screens/WebControlsPage.png")
             self.driver.back()
             print("PASSED: Web Controls Page")
         except:
@@ -241,12 +241,12 @@ class Landing_Page(unittest.TestCase):
             time.sleep(5)
             hundles = self.driver.window_handles
             self.driver.switch_to.window(hundles[1])
-            self.driver.save_screenshot("appstore.png")
+            self.driver.save_screenshot("screens/appstore.png")
             self.driver.switch_to.window(hundles[0])
             self.driver.find_element(By.XPATH, self.googlePlay).click()
             hundles = self.driver.window_handles
             self.driver.switch_to.window(hundles[2])
-            self.driver.save_screenshot("playmarket.png")
+            self.driver.save_screenshot("screens/playmarket.png")
             self.driver.switch_to.window(hundles[0])
             print("PASSED: App pages")
         except:
