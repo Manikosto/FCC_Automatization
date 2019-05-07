@@ -14,7 +14,7 @@ class Landing_Page(unittest.TestCase):
     def setUp(self):
 
         '''Fields of INIT'''
-        self.driver = webdriver.Chrome('chromedriver.exe')  # Обьявление драйвера
+        self.driver = webdriver.Chrome('chromedriver.exe')  
         self.url = "https://qa-www.freeconferencecallhd.com/"
         self.logo_link = "//a[@title='FreeConferenceCallHD.com']"
         self.wait = WebDriverWait(self.driver, 10)
