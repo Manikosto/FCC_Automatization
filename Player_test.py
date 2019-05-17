@@ -26,10 +26,12 @@ class LP_tests(unittest.TestCase):
         count_of_video = 0
         action = ActionChains(driver)
         # Login on page
-        driver.get('https://qa-www.freeconferencecall.com/login#login')
-        driver.find_element(By.XPATH, "/html//input[@id='login_email']").send_keys('mkrtkv@gmail.com')
-        driver.find_element(By.XPATH, "/html//input[@id='password']").send_keys('qwe123321ewq')
+        driver.get('https://www.freeconferencecall.com/login#login')
+        driver.find_element(By.XPATH, "/html//input[@id='login_email']").send_keys('roma.sennikov@freeconferencecall.com')
+        driver.find_element(By.XPATH, "/html//input[@id='password']").send_keys('1234')
         driver.find_element(By.XPATH, "/html//button[@id='loginformsubmit']").click()
+        ###qwe123321ewq###
+        ###mkrtkv@gmail.com###
 
         # Go to H&R
         time.sleep(10)
