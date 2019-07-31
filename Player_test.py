@@ -27,8 +27,8 @@ class LP_tests(unittest.TestCase):
         action = ActionChains(driver)
         # Login on page
         driver.get('https://www.freeconferencecall.com/login#login')
-        driver.find_element(By.XPATH, "/html//input[@id='login_email']").send_keys('roma.sennikov@freeconferencecall.com')
-        driver.find_element(By.XPATH, "/html//input[@id='password']").send_keys('1234')
+        driver.find_element(By.XPATH, "/html//input[@id='login_email']").send_keys(login)
+        driver.find_element(By.XPATH, "/html//input[@id='password']").send_keys(password)
         driver.find_element(By.XPATH, "/html//button[@id='loginformsubmit']").click()
         ###qwe123321ewq###
         ###mkrtkv@gmail.com###
